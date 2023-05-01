@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <servlet>
+    <description></description>
+    <display-name>VEandSOTP</display-name>
+    <servlet-name>VEandSOTP</servlet-name>
+    <servlet-class>Registration_Login.VEandSOTP</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VEandSOTP</servlet-name>
+    <url-pattern>/VEandSOTP</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>get_Entered_OTP</display-name>
+    <servlet-name>get_Entered_OTP</servlet-name>
+    <servlet-class>Registration_Login.get_Entered_OTP</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>get_Entered_OTP</servlet-name>
+    <url-pattern>/get_Entered_OTP</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>cmp_new_pass</display-name>
+    <servlet-name>cmp_new_pass</servlet-name>
+    <servlet-class>Registration_Login.cmp_new_pass</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cmp_new_pass</servlet-name>
+    <url-pattern>/cmp_new_pass</url-pattern>
+  </servlet-mapping>
+</web-app>
